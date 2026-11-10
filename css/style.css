@@ -7,17 +7,17 @@ body{
     --bubblegum-pink: #ea526fff;
     --gunmetal: #2e3532ff;
     grid-area:
-    "hd, nv, nv",
-    "sl, at, at",
-    "at, at, sr",
-    "ft, ft, ft";
+    "hd nv nv",
+    "sl at at",
+    "at at sr",
+    "ft ft ft";
     background-color: var(--deep-lilac);
 }
 
 header{
     grid-area: hd;
     color: var(--icy-blue);
-    font-size: large;
+    font-size:xx-large;
 }
 
 nav{
