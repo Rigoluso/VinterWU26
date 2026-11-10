@@ -1,1 +1,41 @@
-/* Här skrivs all din CSS */
+
+
+body{
+    --deep-lilac: #7e57c2ff;
+    --pastel-pink: #ffbeccff;
+    --icy-blue: #b2e4ffff;
+    --bubblegum-pink: #ea526fff;
+    --gunmetal: #2e3532ff;
+    grid-area:
+    "hd, nv, nv",
+    "sl, at, at",
+    "at, at, sr",
+    "ft, ft, ft";
+    background-color: var(--deep-lilac);
+}
+
+header{
+    grid-area: hd;
+    color: var(--icy-blue);
+    font-size: large;
+}
+
+nav{
+    grid-area: nv;
+}
+
+.sidebarLeft{
+    grid-area: sl;
+}
+
+.sidebarRight{
+    grid-area: sr;
+}
+
+article{
+    grid-area: at;
+}
+
+footer{
+    grid-area: ft;
+}
