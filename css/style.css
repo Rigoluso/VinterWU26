@@ -6,36 +6,76 @@ body{
     --icy-blue: #b2e4ffff;
     --bubblegum-pink: #ea526fff;
     --gunmetal: #2e3532ff;
-    grid-area:
-    "hd nv nv",
-    "sl at at",
-    "at at sr",
+
+    display:grid;
+    grid-template-rows: 50px 300px 300px 70px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    "hd nv nv"
+    "sl a1 a1"
+    "a2 a2 sr"
     "ft ft ft";
+    margin: 20px;
+    gap: 10px;
     background-color: var(--deep-lilac);
+    border: 2px;
+    border-radius: 2px;
 }
 
-header{
+.header{
     grid-area: hd;
-    color: var(--icy-blue);
-    font-size:xx-large;
+    background-color: var(--bubblegum-pink);
+    font-size:30px;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-decoration: none;
+    color: var(--pastel-pink);
+    border-radius: 5px;
+    border: 2px solid;
+    transform:scale(1);
+}
+.header:hover{
+    transform:scale(1.01);
 }
 
 nav{
     grid-area: nv;
+    background-color: var(--bubblegum-pink);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-color: var(--pastel-pink);
+    border-radius: 5px;
+}
+
+.nvButton{
+    margin: 70px;
+    text-decoration: none;
+    color: var(--pastel-pink);
 }
 
 .sidebarLeft{
     grid-area: sl;
+    background-color: var(--icy-blue);
 }
 
 .sidebarRight{
     grid-area: sr;
 }
 
-article{
-    grid-area: at;
+.article1{
+    grid-area: a1;
+}
+.article2{
+    grid-area: a1;
 }
 
 footer{
     grid-area: ft;
+    background-color: var(--pastel-pink);
 }
